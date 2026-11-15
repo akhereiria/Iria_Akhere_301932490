@@ -18,7 +18,7 @@ Figure 1. Tables, keys and relationships. PK: primary key; FK: foreign key; UK: 
 
 ## Portfolio 2: Query Processing and Optimisation
 
-I ran three SQL queries against the sample records. The join returned 2 rows and included ava.chen@example.test with ACCT-SYN-001. For the index comparison, I used 50,000 separate performance rows. The median lookup time changed from 2.244 ms to 0.275 ms. Both phases returned the same records. The measured plan used the new index. These timings apply to this lookup and environment.
+I ran three SQL queries against the sample records. The join returned 2 rows and included adedeji.adebayo@example.test with ACCT-SYN-001. For the index comparison, I used 50,000 separate performance rows. The median lookup time changed from 2.244 ms to 0.275 ms. Both phases returned the same records. The measured plan used the new index. These timings apply to this lookup and environment.
 
 ## Portfolio 3: Transactions and Concurrency
 
@@ -42,7 +42,7 @@ I proposed a three-member MongoDB replica set distributed across separate failur
 
 ## Individual reflection
 
-I kept customer, account, ledger_entry in separate tables so their details could be maintained without repeating them in every related record. When external_ref is non-null, it must be unique among ledger entries; multiple entries may have no external reference. The constraint tests check this alongside the required values and record links. One issue illustrated by the two-session exercise is that both sessions can read the same value before either update is committed. Locking the row before reading preserves both increments. The index comparison also shows why I need to check the execution plan as well as the final answer: the same result can require different amounts of database work.
+I kept customer, account, ledger_entry in separate tables so their details could be maintained without repeating them in every related record. When external_ref is non-null, it must be unique among ledger entries; multiple entries may have no external reference. One issue illustrated by the two-session exercise is that both sessions can read the same value before either update is committed. Locking the row before reading preserves both increments. The index comparison also shows why I need to check the execution plan as well as the final answer: the same result can require different amounts of database work.
 
 ## AI-use declaration
 
