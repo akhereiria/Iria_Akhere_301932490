@@ -40,8 +40,8 @@ The entity keys determine their own descriptions. Related records keep foreign k
 
 | id | email | display_name | created_at |
 | --- | --- | --- | --- |
-| 1001 | ava.chen@example.test | Ava Chen | 2026-10-01T09:00:00+00:00 |
-| 1002 | noah.lee@example.test | Noah Lee | 2026-10-02T10:30:00+00:00 |
+| 1001 | adedeji.adebayo@example.test | Adedeji Adebayo | 2026-10-01T09:00:00+00:00 |
+| 1002 | noah.udeh@example.test | Noah Udeh | 2026-10-02T10:30:00+00:00 |
 
 ## account
 
