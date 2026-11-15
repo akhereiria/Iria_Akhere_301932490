@@ -18,7 +18,7 @@ My case study records customer, account, ledger_entry.
 
 | Entity | Information stored |
 | --- | --- |
-| customer | A synthetic fintech customer who may own accounts. |
+| customer | A Diamond Digital Bank customer who may own accounts. |
 | account | A customer-owned account with a currency and current available balance. |
 | ledger_entry | A posted debit or credit that records activity for one account. |
 
