@@ -7,7 +7,7 @@ VALUES (1001, 'pk-test@example.test', 'PK Test', '2026-10-07T08:00:00Z');
 
 -- 2. customer unique reject. Expected: uq_customer_0, SQLSTATE 23505.
 INSERT INTO portfolio."customer" ("id", "email", "display_name", "created_at")
-VALUES (9001, 'ava.chen@example.test', 'Unique Test', '2026-10-07T08:01:00Z');
+VALUES (9001, 'adedeji.adebayo@example.test', 'Unique Test', '2026-10-07T08:01:00Z');
 
 -- 3. customer not null reject. Expected: display_name, SQLSTATE 23502.
 INSERT INTO portfolio."customer" ("id", "email", "display_name", "created_at")
