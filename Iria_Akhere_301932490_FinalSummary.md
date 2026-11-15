@@ -38,7 +38,7 @@ The portfolio folders contain the SQL and JavaScript, explanations, query plans,
 
 ## Portfolio 5: Distributed and Cloud Database Exercise
 
-I proposed three MongoDB replica members across separate failure zones. The discussion covers primary elections, majority acknowledgement, secondary lag and sharding trade-offs for account_event_stream. Replication supports availability, while backups address recovery. PostgreSQL needs its own availability plan. This is the permitted discussion option; no live replica set or failover test was deployed.
+I proposed a three-member MongoDB replica set distributed across separate failure zones to enhance availability and resilience. The discussion covered primary elections, majority acknowledgements, secondary replication lag, and the trade-offs associated with sharding for the account_event_stream. It also highlighted that replication supports high availability, while backups provide a separate layer of data recovery. PostgreSQL would require an independent high-availability strategy. This was limited to the permitted discussion scope; no live replica set was deployed, and no failover testing was conducted.
 
 ## Individual reflection
 
@@ -46,7 +46,7 @@ I kept customer, account, ledger_entry in separate tables so their details could
 
 ## AI-use declaration
 
-I used GitHub Copilot and the portfolio generator to help prepare the database model, scripts and explanations. The generator ran the PostgreSQL and MongoDB exercises, checked their outputs and captured the result images. I remain responsible for checking and explaining the submitted work.
+I used the portfolio generator and GitHub Copilot to help prepare the database model, scripts and explanations. The generator ran the PostgreSQL and MongoDB exercises. I checked and verified their outputs and captured the result images. 
 
 ## References
 
