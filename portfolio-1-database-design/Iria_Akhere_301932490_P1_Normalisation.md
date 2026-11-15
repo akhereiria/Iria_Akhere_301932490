@@ -1,4 +1,4 @@
-# Synthetic Fintech Account Ledger — normalisation
+# Diamond Digital Bank — normalisation
 
 The example uses the saved sample records. The full set of fields is in the design and schema.
 
@@ -64,3 +64,4 @@ The entity keys determine their own descriptions. Related records keep foreign k
 - ledger_entry: (id) → account_id, entry_type, amount, posted_at, external_ref
 
 Joining the decomposed sample tables reproduces the original 2 example rows. The design assumes the declared keys describe the relevant business dependencies.
+

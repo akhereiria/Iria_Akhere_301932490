@@ -1,4 +1,4 @@
--- Fictional sample records for Synthetic Fintech Account Ledger.
+-- Fictional sample records for Diamond Digital Bank.
 BEGIN;
 SET LOCAL standard_conforming_strings = on;
 INSERT INTO portfolio."customer" ("id", "email", "display_name", "created_at") VALUES (1001, 'ava.chen@example.test', 'Ava Chen', '2026-10-01T09:00:00Z');

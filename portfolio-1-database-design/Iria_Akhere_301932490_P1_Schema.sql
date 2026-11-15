@@ -1,4 +1,4 @@
--- Synthetic Fintech Account Ledger: tables, keys and business constraints.
+-- Diamond Digital Bank: tables, keys and business constraints.
 -- Run once in a fresh PostgreSQL database.
 BEGIN;
 SET LOCAL standard_conforming_strings = on;
