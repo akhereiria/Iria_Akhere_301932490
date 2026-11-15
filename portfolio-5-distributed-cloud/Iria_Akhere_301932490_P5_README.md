@@ -1,10 +1,10 @@
-# Synthetic Fintech Account Ledger — Portfolio 5
+# Diamond Digital Bank — Portfolio 5
 
 This is the proposed distributed design for the case study.
 
 ## Case and proposed deployment
 
-Synthetic Fintech Account Ledger keeps its relational records in PostgreSQL. MongoDB stores account_event_stream: Proposed event-oriented documents for synthetic account activity, with account identifiers and event time/type and an embedded ledger_entry entity for entry-posted events. This is an alternative model for discussion, not a replacement for relational constraints. Proposed deployment: the application connects to a three-member MongoDB replica set across three availability zones in one region. PostgreSQL also needs its own managed high-availability configuration. These are separate databases; a MongoDB replica set does not replicate PostgreSQL.
+Diamond Digital Bank keeps its relational records in PostgreSQL. MongoDB stores account_event_stream: Proposed event-oriented documents for synthetic account activity, with account identifiers and event time/type and an embedded ledger_entry entity for entry-posted events. This is an alternative model for discussion, not a replacement for relational constraints. Proposed deployment: the application connects to a three-member MongoDB replica set across three availability zones in one region. PostgreSQL also needs its own managed high-availability configuration. These are separate databases; a MongoDB replica set does not replicate PostgreSQL.
 
 ## Replication and availability
 
@@ -16,11 +16,11 @@ For account_event_stream, a proposed client policy is majority write concern wit
 
 ## Sharding trade-off
 
-Sharding partitions documents; replication copies them for availability. The small sample in this portfolio does not need sharding. If account_event_stream becomes large, evaluate a high-cardinality source-record identifier as a possible hashed shard key against actual query and write patterns. A time-only increasing key can concentrate new writes, while a hashed key can make time-range queries contact multiple shards. Validate distribution and query plans before choosing a key.
+Sharding partitions documents; replication copies them for availability. The small sample in this portfolio does not need sharding. If account_event_stream becomes large, evaluate a high-cardinality source-record identifier as a possible hashed shard key against actual query and write patterns. A time-only increasing key can concentrate new writes, while a hashed key can make time-range queries contact multiples shards. Validate distribution and query plans before choosing a key.
 
 ## Cloud deployment and recovery
 
-A real deployment would use private networking, authentication, least-privilege roles, TLS, monitoring and tested backups. Replication also copies accidental deletions, so it does not replace backups. Availability zones do not provide regional disaster recovery. No cloud service was provisioned and no failover, replication, sharding or recovery experiment was run for this discussion.
+A real deployment would use private networking, authentication, least-privilege roles, TLS, monitoring and tested backups. Replication also copies accidental deletions, so it does not replace backups. Availability zones do not provide Regional disaster recovery. No cloud service was provisioned and no failover, replication, sharding or recovery experiment was run for this discussion.
 
 ## References
 

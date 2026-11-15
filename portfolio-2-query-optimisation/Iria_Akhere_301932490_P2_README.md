@@ -1,4 +1,4 @@
-# Synthetic Fintech Account Ledger — SQL queries
+# Diamond Digital Bank — SQL queries
 
 ## 1. Show related customer, account, ledger_entry records (up to 20).
 
@@ -127,4 +127,3 @@ Use a fresh database with the Portfolio 1 schema and sample data. Run Iria_Akher
 ## References
 
 - [PostgreSQL — EXPLAIN](https://www.postgresql.org/docs/17/using-explain.html)
-

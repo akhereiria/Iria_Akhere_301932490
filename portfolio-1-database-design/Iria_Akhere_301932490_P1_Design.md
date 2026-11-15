@@ -1,4 +1,4 @@
-# Synthetic Fintech Account Ledger — database design
+# Diamond Digital Bank — database design
 
 My case study records customer, account, ledger_entry.
 
@@ -77,4 +77,3 @@ My case study records customer, account, ledger_entry.
 - A debit is posted only if the account has sufficient available balance.
 - Timestamps use UTC, and posted ledger entries are not edited in this exercise.
 - For the worked normalization example, start with ledger_entry and its account_id foreign key: keep account attributes in account and store only account_id on ledger_entry, avoiding repeated ancestor-role references.
-

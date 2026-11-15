@@ -1,4 +1,4 @@
-# Synthetic Fintech Account Ledger — ER diagram
+# Diamond Digital Bank — ER diagram
 
 ```mermaid
 erDiagram

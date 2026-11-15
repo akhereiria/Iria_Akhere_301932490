@@ -24,9 +24,8 @@ The 11 invalid inserts were rejected at their expected constraints, and the vali
 
 ## Run the SQL
 
-Create a fresh PostgreSQL database. Run the schema first, then the sample data. Run the deliberately invalid statements in ConstraintTests.sql individually outside a transaction; each is expected to produce an error.
+Create a fresh PostgreSQL database. Run the schema first, then the sample data. Run the deliberately invalid statements in ConstraintTests.sql individually outside a transaction; each is expected to fail at the named constraint.
 
 ## References
 
 - [PostgreSQL — constraints](https://www.postgresql.org/docs/17/ddl-constraints.html)
-
