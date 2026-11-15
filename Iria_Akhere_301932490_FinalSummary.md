@@ -1,16 +1,16 @@
 # MIT 8103 Advanced Database Systems
 
-**Synthetic Fintech Account Ledger** · Akhere Iria · Student ID 301932490
+**Diamond Digital Bank** · Akhere Iria · Student ID 301932490
 
 ## Case study
 
-My case study is Synthetic Fintech Account Ledger. I designed the database for fintech operations analysts and database students, with separate tables named customer, account and ledger_entry. It supports these operations: open an account for a customer; post a positive debit or credit entry to an account; review account activity and balances; compare ledger date-filter plans with and without a B-tree index.
+My case study is Diamond Digital Bank. I designed the database for fintech operations analysts and database students, with separate tables named customer, account and ledger_entry. It supports these operations: open an account for a customer; post a positive debit or credit entry to an account; review account activity and balances; compare ledger date-filter plans with and without a B-tree index.
 
 ## Portfolio 1: Database Design and Modelling
 
 I organised the relational design into 3 tables. Primary keys identify records, foreign keys preserve the links, and checks enforce the stated business rules. When external_ref is non-null, it must be unique among ledger entries; multiple entries may have no external reference. The normalisation examples show the sample data at 1NF, 2NF and 3NF. All 11 deliberately invalid inserts were rejected without changing the valid sample rows.
 
-![Synthetic Fintech Account Ledger ER diagram](images/Iria_Akhere_301932490_ERDiagram.png)
+![Diamond Digital Bank ER diagram](images/Iria_Akhere_301932490_ERDiagram.png)
 
 Figure 1. Tables, keys and relationships. PK: primary key; FK: foreign key; UK: unique value.
 
@@ -34,7 +34,6 @@ https://github.com/akhereiria/Iria_Akhere_301932490
 
 The portfolio folders contain the SQL and JavaScript, explanations, query plans, result tables and screenshots.
 
-
 <!-- PAGE BREAK -->
 
 ## Portfolio 5: Distributed and Cloud Database Exercise
@@ -47,7 +46,7 @@ I kept customer, account, ledger_entry in separate tables so their details could
 
 ## AI-use declaration
 
-I used GitHub Copilot and the portfolio generator to help prepare the database model, scripts and explanations. The generator ran the PostgreSQL and MongoDB exercises, checked their outputs and captured the result images.  I remain responsible for checking and explaining the submitted work.
+I used GitHub Copilot and the portfolio generator to help prepare the database model, scripts and explanations. The generator ran the PostgreSQL and MongoDB exercises, checked their outputs and captured the result images. I remain responsible for checking and explaining the submitted work.
 
 ## References
 
@@ -59,4 +58,3 @@ I used GitHub Copilot and the portfolio generator to help prepare the database m
 - [MongoDB: replication](https://www.mongodb.com/docs/manual/replication/)
 - [MongoDB: sharding](https://www.mongodb.com/docs/manual/sharding/)
 - [Mermaid: ER diagrams](https://mermaid.js.org/syntax/entityRelationshipDiagram.html)
-
