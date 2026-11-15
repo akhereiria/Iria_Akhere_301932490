@@ -1,8 +1,8 @@
-# Synthetic Fintech Account Ledger
+# Diamond Digital Bank
 
 Akhere Iria · Student ID 301932490
 
-The portfolio uses fictional records for Synthetic Fintech Account Ledger.
+The portfolio uses fictional records for Diamond Digital Bank.
 
 - [Portfolio 1](portfolio-1-database-design/)
 - [Portfolio 2](portfolio-2-query-optimisation/)
